@@ -5,12 +5,35 @@
     // let listaDeNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
     //Separe os números pares e os números ímpares em listas distintas e apresente as listas de forma crescente e forma descrescente.
 
-    //ENTRADA
+    let listaDeNomes = ["João", "Maria", "José", "Amanda", "Beatriz", "Júlio", "Olívia"];
+    let nomesMasculinos = [];
+    let nomesFemininos = [];
 
 
-    //PROCESSAMENTO
+    for (const nome of listaDeNomes) {
+        let genero = prompt(`O nome "${nome}" é Masculino (M) ou Feminino (F)?`);
 
 
-    //SAÍDA
+        if (genero.toUpperCase() === "M") {
+            nomesMasculinos.push(nome);
+        } else if (genero.toUpperCase() === "F") {
+            nomesFemininos.push(nome);
+        } else {
+            alert("Opção inválida. Use apenas 'M' ou 'F'.");
+        }
+    }
+  
+ 
+ 
+     for (const nomeMasculino of nomesMasculinos) {
+        alert(nomeMasculino);
+      }
+ 
+ 
+ 
+     for (const nomeFeminino of nomesFemininos) {
+         alert(nomeFeminino);
+     }
+ 
 
 </script>
