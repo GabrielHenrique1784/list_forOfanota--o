@@ -14,9 +14,9 @@
         let genero = prompt(`O nome "${nome}" é Masculino (M) ou Feminino (F)?`);
 
 
-        if (genero.toUpperCase() === "M") {
+        if (genero === "M") {
             nomesMasculinos.push(nome);
-        } else if (genero.toUpperCase() === "F") {
+        } else if (genero === "F") {
             nomesFemininos.push(nome);
         } else {
             alert("Opção inválida. Use apenas 'M' ou 'F'.");
